@@ -73,7 +73,7 @@ Para executar o projeto no Webots:
 
 - Classificação precisa das caixas com base em deslocamento.
 - Comportamento adaptativo do robô frente a obstáculos e desalinhamentos.
-- Geração de logs indicando quais caixas são leves ou pesadas.
+- Encontrar qual é a caixa leve da simulação.
 
 ## 10. Considerações Finais
 
