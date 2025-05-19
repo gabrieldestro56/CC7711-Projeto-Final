@@ -4,11 +4,11 @@ Este projeto implementa um sistema de navegação autônoma utilizando o simulad
 
 ## 1. Descrição Geral
 
-O código controla um robô móvel via Supervisor API (Python), utilizando sensores de proximidade para navegação e desvio de obstáculos. Após localizar uma caixa, o robô realiza um empurrão controlado e verifica o deslocamento em relação à posição inicial, classificando as caixas conforme seu movimento.
+O código controla um robô móvel via WeBots, utilizando sensores de proximidade para navegação e desvio de obstáculos. Após localizar uma caixa, o robô realiza um empurrão controlado e verifica o deslocamento em relação à posição inicial, até encontrar a caixa mais leve da simulação.
 
 ## 2. Tecnologias Utilizadas
 
-- Webots
+- WeBots
 - Python 3
 - Sensores de proximidade (ps0 a ps7)
 - Supervisor do Webots
@@ -28,7 +28,7 @@ O robô utiliza um controle proporcional para alinhar-se com o destino com base 
 
 ### c. Classificação de Caixas
 
-Após alcançar a caixa, o robô a empurra por dois segundos. Em seguida, compara a nova posição com a original. Se o deslocamento for maior que uma tolerância definida (`0.01 m`), a caixa é considerada leve.
+Após alcançar a caixa, o robô a empurra por dois segundos. Em seguida, compara a nova posição com a original. Se o deslocamento for maior que uma tolerância definida (`0.01 m`), a caixa é considerada leve e a simulação é encerrada.
 
 ## 4. Algoritmo de Navegação
 
